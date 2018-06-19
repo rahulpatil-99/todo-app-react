@@ -1,7 +1,17 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import { Todo } from '../src/components/Todo';
+import { Todo,styleForTodoContent } from '../src/components/Todo';
 global.td =require('testdouble');
+
+describe('styleForTodoContent',()=>{
+    it('should return content in strike tag for true status',()=>{
+        expect(styleForTodoContent(true,'sample')).toEqual(<strike>sample</strike>);
+    });
+
+    it('should return content without any tag for false status',()=>{
+        expect(styleForTodoContent(false,'sample')).toEqual('sample');
+    });
+});
 
 describe('Todo',()=>{
     it('should have todo-details class',()=>{

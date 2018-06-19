@@ -10,7 +10,7 @@ export class  Todos extends React.Component{
     render(){
         const { todos, onTodoClick } = this.props;
         if(todos.length===0) {
-            return <ul>no todos</ul>;
+            return <ul>no todo</ul>;
         }
         return (
             <div className="todos" style={divstyle}>
