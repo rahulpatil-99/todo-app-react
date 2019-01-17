@@ -21,7 +21,7 @@ module.exports = {
     },
     devServer:{
         port: 3000,
-        publicPath: 'http://localhost:3000'
+        publicPath: 'http://0.0.0.0:3000'
     },
     plugins: [HTMLWebpackPluginConfig]
 };
