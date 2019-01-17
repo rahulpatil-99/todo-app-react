@@ -20,8 +20,7 @@ module.exports = {
         path: __dirname + '/build'
     },
     devServer:{
-        port: 3000,
-        publicPath: 'http://0.0.0.0:3000'
+        port: 3000
     },
     plugins: [HTMLWebpackPluginConfig]
 };
